@@ -80,14 +80,14 @@ app.delete('/comments/:id', (req,res) => {
 })
 
 
-// app.get('/tacos', (req,res) => {
-//     res.send("Get/tacos response")
-// })
-// app.post('/tacos', (req,res) => {
-//     const {meat,qty} = req.body;
-//     res.send(`okay, here is your ${qty} ${meat} tacos`)
+app.get('/tacos', (req,res) => {
+    res.send("Get/tacos response")
+})
+app.post('/tacos', (req,res) => {
+    const {meat,qty} = req.body;
+    res.send(`okay, here is your ${qty} ${meat} tacos`)
    
-// })
+})
 
 app.listen(3000, () => {
     console.log("On port 3000!")
